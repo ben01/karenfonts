@@ -1,0 +1,17 @@
+%%FONTLAB ENCODING: 5849532; Karen Stage 3 - Delete Un-needed Glyphs
+%%GROUP:Custom Encodings
+%
+
+% med gha med wa
+uni103Euni103D
+% med ra: short: space on top
+uni103C.alt.narr
+% med ra uu: short
+uni103Cuni102F.narr
+% med ra: wide
+uni103C.wide
+% med ra: wide: space on top
+uni103C.alt.wide
+% med ra uu: wide
+uni103Cuni102F.wide
+

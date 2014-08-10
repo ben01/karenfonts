@@ -1,0 +1,168 @@
+%%FONTLAB ENCODING: 1239423; Karen Stage 1 - Basic Shapes
+%%GROUP:Custom Encodings
+%
+
+% ka
+uni1000
+% kha
+uni1001
+% gha
+uni1002
+% kha
+uni1003
+% pwo kha
+uni100E
+% nga
+uni1004
+% hsa
+uni1005
+% sa
+uni1006
+% za
+uni1007
+% sha
+uni1061
+% nya
+uni100A
+% nya: short tail
+uni100A.alt
+% ta
+uni1010
+% hta
+uni1011
+% da
+uni1012
+% na
+uni1014
+% na: short tail
+uni1014.alt
+% pa
+uni1015
+% hpa
+uni1016
+uni1017
+% ba
+uni1018
+% ma
+uni1019
+% ya
+uni101A
+% ra
+uni101B
+% ra: short tail
+uni101B.alt
+% la
+uni101C
+% wa
+uni101D
+% tha
+uni101E
+% pwo tha
+uni1065
+% ha
+uni101F
+% ah
+uni1021
+% ahh
+uni1027
+% med gha
+uni103E
+% med gha med wa
+uni103Euni103D
+% med ya
+uni1060
+% med la
+uni103B
+% med ra
+uni103C
+% med ra: short: space on top
+uni103C.alt.narr
+% med ra uu: short
+uni103Cuni102F.narr
+% med ra: wide
+uni103C.wide
+% med ra: wide: space on top
+uni103C.alt.wide
+% med ra uu: wide
+uni103Cuni102F.wide
+% med wa
+uni103D
+% ah
+uni102B
+% ee
+uni1036
+% er
+uni1062
+% uu
+uni102F
+% uu: tall
+uni102F.alt
+% oo
+uni1030
+% oo: tall
+uni1030.alt
+% pwo er
+uni1067
+% pwo uu
+uni1068
+% ay
+uni1037
+% eh
+uni1032
+% oh
+uni102D
+% aw
+uni102E
+% erthee
+uni1062_uni103A
+% athee base
+uni102C
+% athee
+uni102C_uni103A
+% plersee
+uni1038
+% hathee base
+uni1063
+% hathee
+uni1063_uni103A
+% kapo
+uni1064
+% pwo tone 1
+uni1069
+% pwo tone 2
+uni106A
+% pwo tone 3
+uni106B
+% pwo tone 4
+uni106C
+% pwo tone 5
+uni106D
+% asat
+uni103A
+% zero
+uni1040
+% one
+uni1041
+% two
+uni1042
+% three
+uni1043
+% four
+uni1044
+% five
+uni1045
+% six
+uni1046
+% seven
+uni1047
+% eight
+uni1048
+% nine
+uni1049
+% Burmese comma
+uni104A
+% Burmese period
+uni104B
+% dotted circle
+uni25CC
+

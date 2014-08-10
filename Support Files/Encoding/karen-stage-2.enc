@@ -1,0 +1,475 @@
+%%FONTLAB ENCODING: 1234232; Karen Stage 2 - Generate Glyphs
+%%GROUP:Custom Encodings
+%
+
+% sha
+uni1061
+% sha wa
+uni1061_uni103D
+% sha wa ay
+uni1061_uni103D_uni1037
+uni1061_uni103D_uni102F
+uni1061_uni103D_uni1030
+% sha ay
+uni1061_uni1037
+% sha uu
+uni1061_uni102F
+% sha oo
+uni1061_uni1030
+% sha med wa uu
+uni1061_uni103D_uni102F
+% sha med wa oo
+uni1061_uni103D_uni1030
+% na
+uni1014
+% na ay
+uni1014_uni1037
+% ra: short tail
+uni101B.alt
+% ra uu
+uni101B_uni102F
+% ra oo
+uni101B_uni1030
+% ra med wa uu
+uni101B_uni103D_uni102F
+% ra med wa oo
+uni101B_uni103D_uni1030
+% ra med ya ay
+uni101B_uni1060_uni1037
+% pwo pa med gha
+uni1066
+% med gha
+uni103E
+% med gha ay
+% med gha ay
+uni103E_uni1037
+% med gha uu
+% med gha uu
+uni103E_uni102F
+% med gha oo
+% med gha oo
+uni103E_uni1030
+% med gha med wa
+uni103Euni103D
+% med ya
+uni1060
+% med ya ay
+% med ya ay
+uni1060_uni1037
+% ka med ya uu
+uni1000_uni1060_uni102F
+% kha med ya uu
+uni1001_uni1060_uni102F
+% gha med ya uu
+uni1002_uni1060_uni102F
+% kha med ya uu
+uni1003_uni1060_uni102F
+% pwo kha med ya uu
+uni100E_uni1060_uni102F
+% nga med ya uu
+uni1004_uni1060_uni102F
+% hsa med ya uu
+uni1005_uni1060_uni102F
+% sa med ya uu
+uni1006_uni1060_uni102F
+% za med ya uu
+uni1007_uni1060_uni102F
+% nya med ya uu
+uni100A_uni1060_uni102F
+% ta med ya uu
+uni1010_uni1060_uni102F
+% hta med ya uu
+uni1011_uni1060_uni102F
+% da med ya uu
+uni1012_uni1060_uni102F
+% na med ya uu
+uni1014_uni1060_uni102F
+% pa med ya uu
+uni1015_uni1060_uni102F
+% hpa med ya uu
+uni1016_uni1060_uni102F
+% ba med ya uu
+uni1018_uni1060_uni102F
+% ma med ya uu
+uni1019_uni1060_uni102F
+% ya med ya uu
+uni101A_uni1060_uni102F
+% ra med ya uu
+uni101B_uni1060_uni102F
+% la med ya uu
+uni101C_uni1060_uni102F
+% tha med ya uu
+uni101E_uni1060_uni102F
+% pwo tha med ya uu
+uni1065_uni1060_uni102F
+% ha med ya uu
+uni101F_uni1060_uni102F
+% aa med ya uu
+uni1021_uni1060_uni102F
+% ka med ya oo
+uni1000_uni1060_uni1030
+% kha med ya oo
+uni1001_uni1060_uni1030
+% gha med ya oo
+uni1002_uni1060_uni1030
+% kha med ya oo
+uni1003_uni1060_uni1030
+% pwo kha med ya oo
+uni100E_uni1060_uni1030
+% nga med ya oo
+uni1004_uni1060_uni1030
+% hsa med ya oo
+uni1005_uni1060_uni1030
+% sa med ya oo
+uni1006_uni1060_uni1030
+% za med ya oo
+uni1007_uni1060_uni1030
+% nya med ya oo
+uni100A_uni1060_uni1030
+% ta med ya oo
+uni1010_uni1060_uni1030
+% hta med ya oo
+uni1011_uni1060_uni1030
+% da med ya oo
+uni1012_uni1060_uni1030
+% na med ya oo
+uni1014_uni1060_uni1030
+% pa med ya oo
+uni1015_uni1060_uni1030
+% hpa med ya oo
+uni1016_uni1060_uni1030
+% ba med ya oo
+uni1018_uni1060_uni1030
+% ma med ya oo
+uni1019_uni1060_uni1030
+% ya med ya oo
+uni101A_uni1060_uni1030
+% ra med ya oo
+uni101B_uni1060_uni1030
+% la med ya oo
+uni101C_uni1060_uni1030
+% tha med ya oo
+uni101E_uni1060_uni1030
+% pwo tha med ya oo
+uni1065_uni1060_uni1030
+% ha med ya oo
+uni101F_uni1060_uni1030
+% aa med ya oo
+uni1021_uni1060_uni1030
+% med la
+uni103B
+% med la ay
+% med la ay
+uni103B_uni1037
+% med la ee
+uni103B_uni1036
+% med la eh
+uni103B_uni1032
+% med la oh
+uni103B_uni102D
+% med la aw
+uni103B_uni102E
+% med la uu
+uni103B_uni102F
+% med la oo
+uni103B_uni1030
+% med ra
+uni103C
+% med ra: short: space on top
+uni103C.alt.narr
+% med ra uu: short
+uni103Cuni102F.narr
+% med ra: wide
+uni103C.wide
+% med ra: wide: space on top
+uni103C.alt.wide
+% med ra uu: wide
+uni103Cuni102F.wide
+% ka med ra: space on top
+uni1000_uni103C.alt
+% kha med ra: space on top
+uni1003_uni103C.alt
+% sa med ra: space on top
+uni1006_uni103C.alt
+% ta med ra: space on top
+uni1010_uni103C.alt
+% hta med ra: space on top
+uni1011_uni103C.alt
+% ba med ra: space on top
+uni1018_uni103C.alt
+% la med ra: space on top
+uni101C_uni103C.alt
+% tha med ra: space on top
+uni101E_uni103C.alt
+% ha med ra: space on top
+uni101F_uni103C.alt
+% kha med ra: space on top
+uni1001_uni103C.alt
+% gha med ra: space on top
+uni1002_uni103C.alt
+% pwo kha med ra: space on top
+uni100E_uni103C.alt
+% nga med ra: space on top
+uni1004_uni103C.alt
+% hsa med ra: space on top
+uni1005_uni103C.alt
+% za med ra: space on top
+uni1007_uni103C.alt
+% da med ra: space on top
+uni1012_uni103C.alt
+% pa med ra: space on top
+uni1015_uni103C.alt
+% hpa med ra: space on top
+uni1016_uni103C.alt
+% ma med ra: space on top
+uni1019_uni103C.alt
+% wa med ra: space on top
+uni101D_uni103C.alt
+% pwo tha med ra: space on top
+uni1065_uni103C.alt
+% ka med ra
+uni1000_uni103C
+% kha med ra
+uni1003_uni103C
+% sa med ra
+uni1006_uni103C
+% ta med ra
+uni1010_uni103C
+% hta med ra
+uni1011_uni103C
+% ba med ra
+uni1018_uni103C
+% la med ra
+uni101C_uni103C
+% tha med ra
+uni101E_uni103C
+% ha med ra
+uni101F_uni103C
+% kha med ra
+uni1001_uni103C
+% gha med ra
+uni1002_uni103C
+% pwo kha med ra
+uni100E_uni103C
+% nga med ra
+uni1004_uni103C
+% hsa med ra
+uni1005_uni103C
+% za med ra
+uni1007_uni103C
+% da med ra
+uni1012_uni103C
+% pa med ra
+uni1015_uni103C
+% hpa med ra
+uni1016_uni103C
+% ma med ra
+uni1019_uni103C
+% wa med ra
+uni101D_uni103C
+% pwo tha med ra
+uni1065_uni103C
+% ka med ra uu
+uni1000_uni103C_uni102F
+% kha med ra uu
+uni1003_uni103C_uni102F
+% sa med ra uu
+uni1006_uni103C_uni102F
+% ta med ra uu
+uni1010_uni103C_uni102F
+% hta med ra uu
+uni1011_uni103C_uni102F
+% ba med ra uu
+uni1018_uni103C_uni102F
+% la med ra uu
+uni101C_uni103C_uni102F
+% tha med ra uu
+uni101E_uni103C_uni102F
+% ha med ra uu
+uni101F_uni103C_uni102F
+% kha med ra uu
+uni1001_uni103C_uni102F
+% gha med ra uu
+uni1002_uni103C_uni102F
+% pwo kha med ra uu
+uni100E_uni103C_uni102F
+% nga med ra uu
+uni1004_uni103C_uni102F
+% hsa med ra uu
+uni1005_uni103C_uni102F
+% za med ra uu
+uni1007_uni103C_uni102F
+% da med ra uu
+uni1012_uni103C_uni102F
+% pa med ra uu
+uni1015_uni103C_uni102F
+% hpa med ra uu
+uni1016_uni103C_uni102F
+% ma med ra uu
+uni1019_uni103C_uni102F
+% wa med ra uu
+uni101D_uni103C_uni102F
+% pwo tha med ra uu
+uni1065_uni103C_uni102F
+% ka med ra oo
+uni1000_uni103C_uni1030
+% kha med ra oo
+uni1003_uni103C_uni1030
+% sa med ra oo
+uni1006_uni103C_uni1030
+% ta med ra oo
+uni1010_uni103C_uni1030
+% hta med ra oo
+uni1011_uni103C_uni1030
+% ba med ra oo
+uni1018_uni103C_uni1030
+% la med ra oo
+uni101C_uni103C_uni1030
+% tha med ra oo
+uni101E_uni103C_uni1030
+% ha med ra oo
+uni101F_uni103C_uni1030
+% kha med ra oo
+uni1001_uni103C_uni1030
+% gha med ra oo
+uni1002_uni103C_uni1030
+% pwo kha med ra oo
+uni100E_uni103C_uni1030
+% nga med ra oo
+uni1004_uni103C_uni1030
+% hsa med ra oo
+uni1005_uni103C_uni1030
+% za med ra oo
+uni1007_uni103C_uni1030
+% da med ra oo
+uni1012_uni103C_uni1030
+% pa med ra oo
+uni1015_uni103C_uni1030
+% hpa med ra oo
+uni1016_uni103C_uni1030
+% ma med ra oo
+uni1019_uni103C_uni1030
+% wa med ra oo
+uni101D_uni103C_uni1030
+% pwo tha med ra oo
+uni1065_uni103C_uni1030
+% med wa
+uni103D
+% med wa ay
+% med wa ay
+uni103D_uni1037
+% ka med wa uu
+uni1000_uni103D_uni102F
+% kha med wa uu
+uni1001_uni103D_uni102F
+% gha med wa uu
+uni1002_uni103D_uni102F
+% kha med wa uu
+uni1003_uni103D_uni102F
+% pwo kha med wa uu
+uni100E_uni103D_uni102F
+% nga med wa uu
+uni1004_uni103D_uni102F
+% hsa med wa uu
+uni1005_uni103D_uni102F
+% sa med wa uu
+uni1006_uni103D_uni102F
+% za med wa uu
+uni1007_uni103D_uni102F
+% nya med wa uu
+uni100A_uni103D_uni102F
+% ta med wa uu
+uni1010_uni103D_uni102F
+% hta med wa uu
+uni1011_uni103D_uni102F
+% da med wa uu
+uni1012_uni103D_uni102F
+% na med wa uu
+uni1014_uni103D_uni102F
+% pa med wa uu
+uni1015_uni103D_uni102F
+% hpa med wa uu
+uni1016_uni103D_uni102F
+% ba med wa uu
+uni1018_uni103D_uni102F
+% ma med wa uu
+uni1019_uni103D_uni102F
+% ya med wa uu
+uni101A_uni103D_uni102F
+% ra med wa uu
+uni101B_uni103D_uni102F
+% la med wa uu
+uni101C_uni103D_uni102F
+% tha med wa uu
+uni101E_uni103D_uni102F
+% pwo tha med wa uu
+uni1065_uni103D_uni102F
+% ha med wa uu
+uni101F_uni103D_uni102F
+% aa med wa uu
+uni1021_uni103D_uni102F
+% ka med wa oo
+uni1000_uni103D_uni1030
+% kha med wa oo
+uni1001_uni103D_uni1030
+% gha med wa oo
+uni1002_uni103D_uni1030
+% kha med wa oo
+uni1003_uni103D_uni1030
+% pwo kha med wa oo
+uni100E_uni103D_uni1030
+% nga med wa oo
+uni1004_uni103D_uni1030
+% hsa med wa oo
+uni1005_uni103D_uni1030
+% sa med wa oo
+uni1006_uni103D_uni1030
+% za med wa oo
+uni1007_uni103D_uni1030
+% nya med wa oo
+uni100A_uni103D_uni1030
+% ta med wa oo
+uni1010_uni103D_uni1030
+% hta med wa oo
+uni1011_uni103D_uni1030
+% da med wa oo
+uni1012_uni103D_uni1030
+% na med wa oo
+uni1014_uni103D_uni1030
+% pa med wa oo
+uni1015_uni103D_uni1030
+% hpa med wa oo
+uni1016_uni103D_uni1030
+% ba med wa oo
+uni1018_uni103D_uni1030
+% ma med wa oo
+uni1019_uni103D_uni1030
+% ya med wa oo
+uni101A_uni103D_uni1030
+% ra med wa oo
+uni101B_uni103D_uni1030
+% la med wa oo
+uni101C_uni103D_uni1030
+% tha med wa oo
+uni101E_uni103D_uni1030
+% pwo tha med wa oo
+uni1065_uni103D_uni1030
+% ha med wa oo
+uni101F_uni103D_uni1030
+% aa med wa oo
+uni1021_uni103D_uni1030
+% pwo tone 1 ngathee
+uni1069_uni1037
+% pwo tone 2 ngathee
+uni106A_uni1037
+% pwo tone 3 ngathee
+uni106B_uni1037
+% pwo tone 4 ngathee
+uni106C_uni1037
+% pwo tone 5 ngathee
+uni106D_uni1037
+% dotted circle
+uni25CC
+% dotted circle
+uni1700
+

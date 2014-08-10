@@ -1,0 +1,1 @@
+copy "C:\Users\Ben\Dropbox\Fonts and Keyboards\Font Development\Support Files\Encoding\*.enc" "C:\Users\Ben\Documents\FontLab\Shared\Encoding" /Y
