@@ -40,20 +40,18 @@ uni101B_uni1060_uni1037
 uni1066
 % med gha
 uni103E
-% med gha ay
+uni15CC_uni103E 
 % med gha ay
 uni103E_uni1037
 % med gha uu
-% med gha uu
 uni103E_uni102F
-% med gha oo
 % med gha oo
 uni103E_uni1030
 % med gha med wa
 uni103Euni103D
 % med ya
 uni1060
-% med ya ay
+uni15CC_uni1060 
 % med ya ay
 uni1060_uni1037
 % ka med ya uu
@@ -162,7 +160,7 @@ uni101F_uni1060_uni1030
 uni1021_uni1060_uni1030
 % med la
 uni103B
-% med la ay
+uni15CC_uni103B 
 % med la ay
 uni103B_uni1037
 % med la ee
@@ -179,6 +177,7 @@ uni103B_uni102F
 uni103B_uni1030
 % med ra
 uni103C
+uni25CC_uni103C 
 % med ra: short: space on top
 uni103C.alt.narr
 % med ra uu: short
@@ -367,7 +366,7 @@ uni101D_uni103C_uni1030
 uni1065_uni103C_uni1030
 % med wa
 uni103D
-% med wa ay
+uni15CC_uni103D 
 % med wa ay
 uni103D_uni1037
 % ka med wa uu
@@ -488,4 +487,12 @@ uni106D_uni1037
 uni25CC
 % dotted circle
 uni1700
+uni25CC_uni1036 
+uni25CC_uni102F 
+uni25CC_uni1030 
+uni25CC_uni1037 
+uni25CC_uni1032 
+uni25CC_uni102D 
+uni25CC_uni102E 
+uni25CC_uni103A
 

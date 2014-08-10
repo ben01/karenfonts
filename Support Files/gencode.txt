@@ -235,10 +235,10 @@ uni25CC=uni1700
 
 uni103C_uni25CC=uni25CC_uni103C
 
-uni25CC_uni103E=uni15CC_uni103E
-uni25CC_uni1060=uni15CC_uni1060
-uni25CC_uni103B=uni15CC_uni103B
-uni25CC_uni103D=uni15CC_uni103D
+uni25CC_uni103E=uni25CC_uni103E
+uni25CC_uni1060=uni25CC_uni1060
+uni25CC_uni103B=uni25CC_uni103B
+uni25CC_uni103D=uni25CC_uni103D
 
 uni25CC_uni1036=uni25CC_uni1036
 uni25CC_uni102F=uni25CC_uni102F
