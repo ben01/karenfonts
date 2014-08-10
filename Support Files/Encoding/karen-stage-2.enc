@@ -40,7 +40,7 @@ uni101B_uni1060_uni1037
 uni1066
 % med gha
 uni103E
-uni15CC_uni103E 
+uni25CC_uni103E 
 % med gha ay
 uni103E_uni1037
 % med gha uu
@@ -51,7 +51,7 @@ uni103E_uni1030
 uni103Euni103D
 % med ya
 uni1060
-uni15CC_uni1060 
+uni25CC_uni1060 
 % med ya ay
 uni1060_uni1037
 % ka med ya uu
@@ -160,7 +160,7 @@ uni101F_uni1060_uni1030
 uni1021_uni1060_uni1030
 % med la
 uni103B
-uni15CC_uni103B 
+uni25CC_uni103B 
 % med la ay
 uni103B_uni1037
 % med la ee
@@ -366,7 +366,7 @@ uni101D_uni103C_uni1030
 uni1065_uni103C_uni1030
 % med wa
 uni103D
-uni15CC_uni103D 
+uni25CC_uni103D 
 % med wa ay
 uni103D_uni1037
 % ka med wa uu
