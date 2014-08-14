@@ -25,8 +25,22 @@ sub uni103E uni1037 by uni103E_uni1037;
 sub uni103E uni102F by uni103E_uni102F;
 sub uni103E uni1030 by uni103E_uni1030;
 
-# Med ya
+# Med ya + ay
 sub uni1060 uni1037 by uni1060_uni1037;
+
+# Med wa + ay
+sub uni103D uni1037 by uni103D_uni1037;
+
+# Med la + vowels
+sub uni103B uni1037 by uni103B_uni1037;
+sub uni103B uni1036 by uni103B_uni1036;
+sub uni103B uni1032 by uni103B_uni1032;
+sub uni103B uni102D by uni103B_uni102D;
+sub uni103B uni102E by uni103B_uni102E;
+sub uni103B uni102F by uni103B_uni102F;
+sub uni103B uni1030 by uni103B_uni1030;
+
+# Med ya
 sub uni1000 uni1060 uni102F by uni1000_uni1060_uni102F;
 sub uni1001 uni1060 uni102F by uni1001_uni1060_uni102F;
 sub uni1002 uni1060 uni102F by uni1002_uni1060_uni102F;
@@ -40,9 +54,11 @@ sub uni100A uni1060 uni102F by uni100A_uni1060_uni102F;
 sub uni1010 uni1060 uni102F by uni1010_uni1060_uni102F;
 sub uni1011 uni1060 uni102F by uni1011_uni1060_uni102F;
 sub uni1012 uni1060 uni102F by uni1012_uni1060_uni102F;
+sub uni1013 uni1060 uni102F by uni1013_uni1060_uni102F;
 sub uni1014 uni1060 uni102F by uni1014_uni1060_uni102F;
 sub uni1015 uni1060 uni102F by uni1015_uni1060_uni102F;
 sub uni1016 uni1060 uni102F by uni1016_uni1060_uni102F;
+sub uni1017 uni1060 uni102F by uni1017_uni1060_uni102F;
 sub uni1018 uni1060 uni102F by uni1018_uni1060_uni102F;
 sub uni1019 uni1060 uni102F by uni1019_uni1060_uni102F;
 sub uni101A uni1060 uni102F by uni101A_uni1060_uni102F;
@@ -65,9 +81,11 @@ sub uni100A uni1060 uni1030 by uni100A_uni1060_uni1030;
 sub uni1010 uni1060 uni1030 by uni1010_uni1060_uni1030;
 sub uni1011 uni1060 uni1030 by uni1011_uni1060_uni1030;
 sub uni1012 uni1060 uni1030 by uni1012_uni1060_uni1030;
+sub uni1013 uni1060 uni1030 by uni1013_uni1060_uni1030;
 sub uni1014 uni1060 uni1030 by uni1014_uni1060_uni1030;
 sub uni1015 uni1060 uni1030 by uni1015_uni1060_uni1030;
 sub uni1016 uni1060 uni1030 by uni1016_uni1060_uni1030;
+sub uni1017 uni1060 uni1030 by uni1017_uni1060_uni1030;
 sub uni1018 uni1060 uni1030 by uni1018_uni1060_uni1030;
 sub uni1019 uni1060 uni1030 by uni1019_uni1060_uni1030;
 sub uni101A uni1060 uni1030 by uni101A_uni1060_uni1030;
@@ -77,16 +95,6 @@ sub uni101E uni1060 uni1030 by uni101E_uni1060_uni1030;
 sub uni1065 uni1060 uni1030 by uni1065_uni1060_uni1030;
 sub uni101F uni1060 uni1030 by uni101F_uni1060_uni1030;
 sub uni1021 uni1060 uni1030 by uni1021_uni1060_uni1030;
-
-
-# Med la
-sub uni103B uni1037 by uni103B_uni1037;
-sub uni103B uni1036 by uni103B_uni1036;
-sub uni103B uni1032 by uni103B_uni1032;
-sub uni103B uni102D by uni103B_uni102D;
-sub uni103B uni102E by uni103B_uni102E;
-sub uni103B uni102F by uni103B_uni102F;
-sub uni103B uni1030 by uni103B_uni1030;
 
 # Med ra
 sub uni1000' uni103C' @needSpaceOnTop by uni1000_uni103C.alt;
@@ -105,11 +113,14 @@ sub uni1004' uni103C' @needSpaceOnTop by uni1004_uni103C.alt;
 sub uni1005' uni103C' @needSpaceOnTop by uni1005_uni103C.alt;
 sub uni1007' uni103C' @needSpaceOnTop by uni1007_uni103C.alt;
 sub uni1012' uni103C' @needSpaceOnTop by uni1012_uni103C.alt;
+sub uni1013' uni103C' @needSpaceOnTop by uni1013_uni103C.alt;
 sub uni1015' uni103C' @needSpaceOnTop by uni1015_uni103C.alt;
 sub uni1016' uni103C' @needSpaceOnTop by uni1016_uni103C.alt;
+sub uni1017' uni103C' @needSpaceOnTop by uni1017_uni103C.alt;
 sub uni1019' uni103C' @needSpaceOnTop by uni1019_uni103C.alt;
 sub uni101D' uni103C' @needSpaceOnTop by uni101D_uni103C.alt;
 sub uni1065' uni103C' @needSpaceOnTop by uni1065_uni103C.alt;
+
 sub uni1000 uni103C by uni1000_uni103C;
 sub uni1003 uni103C by uni1003_uni103C;
 sub uni1006 uni103C by uni1006_uni103C;
@@ -126,11 +137,14 @@ sub uni1004 uni103C by uni1004_uni103C;
 sub uni1005 uni103C by uni1005_uni103C;
 sub uni1007 uni103C by uni1007_uni103C;
 sub uni1012 uni103C by uni1012_uni103C;
+sub uni1013 uni103C by uni1013_uni103C;
 sub uni1015 uni103C by uni1015_uni103C;
 sub uni1016 uni103C by uni1016_uni103C;
+sub uni1017 uni103C by uni1017_uni103C;
 sub uni1019 uni103C by uni1019_uni103C;
 sub uni101D uni103C by uni101D_uni103C;
 sub uni1065 uni103C by uni1065_uni103C;
+
 sub uni1000 uni103C uni102F by uni1000_uni103C_uni102F;
 sub uni1003 uni103C uni102F by uni1003_uni103C_uni102F;
 sub uni1006 uni103C uni102F by uni1006_uni103C_uni102F;
@@ -147,8 +161,10 @@ sub uni1004 uni103C uni102F by uni1004_uni103C_uni102F;
 sub uni1005 uni103C uni102F by uni1005_uni103C_uni102F;
 sub uni1007 uni103C uni102F by uni1007_uni103C_uni102F;
 sub uni1012 uni103C uni102F by uni1012_uni103C_uni102F;
+sub uni1013 uni103C uni102F by uni1013_uni103C_uni102F;
 sub uni1015 uni103C uni102F by uni1015_uni103C_uni102F;
 sub uni1016 uni103C uni102F by uni1016_uni103C_uni102F;
+sub uni1017 uni103C uni102F by uni1017_uni103C_uni102F;
 sub uni1019 uni103C uni102F by uni1019_uni103C_uni102F;
 sub uni101D uni103C uni102F by uni101D_uni103C_uni102F;
 sub uni1065 uni103C uni102F by uni1065_uni103C_uni102F;
@@ -168,15 +184,16 @@ sub uni1004 uni103C uni1030 by uni1004_uni103C_uni1030;
 sub uni1005 uni103C uni1030 by uni1005_uni103C_uni1030;
 sub uni1007 uni103C uni1030 by uni1007_uni103C_uni1030;
 sub uni1012 uni103C uni1030 by uni1012_uni103C_uni1030;
+sub uni1013 uni103C uni1030 by uni1013_uni103C_uni1030;
 sub uni1015 uni103C uni1030 by uni1015_uni103C_uni1030;
 sub uni1016 uni103C uni1030 by uni1016_uni103C_uni1030;
+sub uni1017 uni103C uni1030 by uni1017_uni103C_uni1030;
 sub uni1019 uni103C uni1030 by uni1019_uni103C_uni1030;
 sub uni101D uni103C uni1030 by uni101D_uni103C_uni1030;
 sub uni1065 uni103C uni1030 by uni1065_uni103C_uni1030;
 
 
-# Med wa
-sub uni103D uni1037 by uni103D_uni1037;
+# Med wa + uu and oo
 sub uni1000 uni103D uni102F by uni1000_uni103D_uni102F;
 sub uni1001 uni103D uni102F by uni1001_uni103D_uni102F;
 sub uni1002 uni103D uni102F by uni1002_uni103D_uni102F;
@@ -190,9 +207,11 @@ sub uni100A uni103D uni102F by uni100A_uni103D_uni102F;
 sub uni1010 uni103D uni102F by uni1010_uni103D_uni102F;
 sub uni1011 uni103D uni102F by uni1011_uni103D_uni102F;
 sub uni1012 uni103D uni102F by uni1012_uni103D_uni102F;
+sub uni1013 uni103D uni102F by uni1013_uni103D_uni102F;
 sub uni1014 uni103D uni102F by uni1014_uni103D_uni102F;
 sub uni1015 uni103D uni102F by uni1015_uni103D_uni102F;
 sub uni1016 uni103D uni102F by uni1016_uni103D_uni102F;
+sub uni1017 uni103D uni102F by uni1017_uni103D_uni102F;
 sub uni1018 uni103D uni102F by uni1018_uni103D_uni102F;
 sub uni1019 uni103D uni102F by uni1019_uni103D_uni102F;
 sub uni101A uni103D uni102F by uni101A_uni103D_uni102F;
@@ -215,9 +234,11 @@ sub uni100A uni103D uni1030 by uni100A_uni103D_uni1030;
 sub uni1010 uni103D uni1030 by uni1010_uni103D_uni1030;
 sub uni1011 uni103D uni1030 by uni1011_uni103D_uni1030;
 sub uni1012 uni103D uni1030 by uni1012_uni103D_uni1030;
+sub uni1013 uni103D uni1030 by uni1013_uni103D_uni1030;
 sub uni1014 uni103D uni1030 by uni1014_uni103D_uni1030;
 sub uni1015 uni103D uni1030 by uni1015_uni103D_uni1030;
 sub uni1016 uni103D uni1030 by uni1016_uni103D_uni1030;
+sub uni1017 uni103D uni1030 by uni1017_uni103D_uni1030;
 sub uni1018 uni103D uni1030 by uni1018_uni103D_uni1030;
 sub uni1019 uni103D uni1030 by uni1019_uni103D_uni1030;
 sub uni101A uni103D uni1030 by uni101A_uni103D_uni1030;
