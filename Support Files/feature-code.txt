@@ -1,3 +1,26 @@
+feature rlig {
+
+script mymr;
+@consonants = [uni1000 uni1001 uni1002 uni1003 uni100E uni1004 uni1005 uni1006 uni1007 uni1061 uni100A uni1010 uni1011 uni1012 uni1014 uni1015 uni1016 uni1018 uni1019 uni101A uni101B uni101C uni101D uni101E uni1065 uni101F uni1021 uni1027 uni1066];
+@medials = [uni103E uni1060 uni103B uni103C uni103D];
+sub @consonants uni25CC_uni103C by uni103C;
+  
+sub @consonants uni25CC_uni103E' by uni103E;
+sub @consonants uni25CC_uni1060' by uni1060;
+sub @consonants uni25CC_uni103B' by uni103B;
+sub @consonants uni25CC_uni103D' by uni103D;
+
+sub [@consonants @medials] uni25CC_uni1036' by uni1036;
+sub [@consonants @medials] uni25CC_uni102F' by uni102F;
+sub [@consonants @medials] uni25CC_uni1030' by uni1030;
+sub [@consonants @medials uni1069 uni106A uni106B uni106C uni106D] uni25CC_uni1037' by uni1037;
+sub [@consonants @medials] uni25CC_uni1032' by uni1032;
+sub [@consonants @medials] uni25CC_uni102D' by uni102D;
+sub [@consonants @medials] uni25CC_uni102E' by uni102E;
+sub [@consonants uni102C uni1063] uni25CC_uni103A' by uni103A;
+
+} rlig;
+
 feature clig {
 
 script mymr;
