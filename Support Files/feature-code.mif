@@ -1,3 +1,30 @@
+Type Contextual
+Name Smart Swashes
+Namecode 8
+Setting Special “Eva”
+Settingcode 1
+Default no
+Orientation HV
+Forward yes
+Exclusive yes
+
+Na uni1014
+Med uni103D
+            EOT     OOB     DEL     EOL   Na    Med
+StartText   1       1       1       1     2     1
+StartLine   1       1       1       1     2     1
+SawNa       1       1       1       1     1     3
+
+  GoTo      Mark? Advance?    SubstMark   SubstCurrent
+1 StartText no    yes         none        none
+2 SawNa     yes   yes         none        none
+3 StartText no    yes         DoSub       none
+
+DoSub
+      uni1014 uni1014.alt
+
+
+
 //====================================================
 //	Sha ligatures
 //====================================================
