@@ -1,419 +1,572 @@
-diff a/Support Files/feature-code.mif b/Support Files/feature-code.mif	(rejected hunks)
-@@ -1,4 +1,77 @@
- //====================================================
-+// Remove dotted circle when ghyph appears in the correct context
-+//====================================================
-+
-+Type Contextual
-+Name NULL
-+Namecode 7
-+Setting NULL
-+Settingcode 0
-+Default yes
-+Orientation HV
-+Forward yes
-+Exclusive no
-+
-+Cons     uni1000 uni1001 uni1002 uni1003 uni100E uni1004 uni1005 uni1006 uni1007 uni1010 uni1011 uni1012 uni1013 uni1015 uni1016 uni1017 uni1018 uni1019 uni101A uni101C uni101D uni101E uni1065 uni101F uni1021 uni1027
-+Sha      uni1061
-+Nya      uni100A
-+Na       uni1014
-+Ra       uni101B
-+Meds     uni103C uni103B uni103E uni1060 uni103D
-+SARa     uni25CC_uni103C
-+SALa     uni25CC_uni103B
-+SAWa     uni25CC_uni103D
-+SAGha    uni25CC_uni103E
-+SAYa     uni25CC_uni1060
-+SAVo     uni25CC_uni1036 uni25CC_uni102F uni25CC_uni1030 uni25CC_uni1032 uni25CC_uni102D uni25CC_uni102E
-+SAAye    uni25CC_uni1037
-+KswTones uni1062 uni102C uni1063
-+PwoTones uni1069 uni106A uni106B uni106C uni106D
-+SAAsat   uni25CC_uni103A
-+ 
-+            EOT   OOB   DEL   EOL   Cons  Sha   Nya   Na    Ra    Meds  SARa  SALa  SAWa  SAGha SAYa  SAVo  SAAye KswTones PwoTones SAAsat
-+StartText   1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     1     10       11       1
-+StartLine   1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     1     10       11       1
-+SawCons     1     1     1     1     3     4     5     6     7     8     9     9     9     9     9     2     2     10       11       2
-+SawSha      1     1     1     1     3     4     5     6     7     8     1     1     9     1     1     2     2     10       11       2
-+SawNya      1     1     1     1     3     4     5     6     7     8     1     9     9     9     9     2     2     10       11       2
-+SawNa       1     1     1     1     3     4     5     6     7     8     9     1     9     9     9     2     2     10       11       2
-+SawRa       1     1     1     1     3     4     5     6     7     8     1     1     9     1     9     2     2     10       11       2
-+SawMeds     1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     2     2     10       11       1
-+SubedMed    1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     2     2     10       11       1
-+KswTones    1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     1     10       11       2
-+PwoTones    1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     2     10       11       1
-+
-+     GoTo      Mark? Advance? SubstMark SubstCurrent    
-+1    StartText no    yes      none      none    
-+2    StartText no    yes      none      DoSub    
-+3    SawCons   no    yes      none      none    
-+4    SawSha    no    yes      none      none    
-+5    SawNya    no    yes      none      none
-+6    SawNa     no    yes      none      none    
-+7    SawRa     no    yes      none      none    
-+8    SawMeds   no    yes      none      none    
-+9    SubedMed  no    yes      none      DoSub    
-+10   KswTones  no    yes      none      none    
-+11   PwoTones  no    yes      none      none    
-+
-+DoSub
-+    uni25CC_uni103C uni103C
-+    uni25CC_uni103B uni103B
-+    uni25CC_uni103E uni103E
-+    uni25CC_uni103D uni103D
-+    uni25CC_uni1060 uni1060
-+    uni25CC_uni1036 uni1036
-+    uni25CC_uni102F uni102F
-+    uni25CC_uni1030 uni1030
-+    uni25CC_uni1037 uni1037
-+    uni25CC_uni1032 uni1032
-+    uni25CC_uni102D uni102D
-+    uni25CC_uni102E uni102E
-+    uni25CC_uni103A uni103A
-+
-+
-+//====================================================
- //    Sha ligatures
- //====================================================
+//====================================================
+// Remove dotted circle when ghyph appears in the correct context
+//====================================================
+
+Type Contextual
+Name NULL
+Namecode 7
+Setting NULL
+Settingcode 0
+Default yes
+Orientation HV
+Forward yes
+Exclusive no
+
+Cons     uni1000 uni1001 uni1002 uni1003 uni100E uni1004 uni1005 uni1006 uni1007 uni1010 uni1011 uni1012 uni1013 uni1015 uni1016 uni1017 uni1018 uni1019 uni101A uni101C uni101D uni101E uni1065 uni101F uni1021 uni1027
+Sha      uni1061
+Nya      uni100A
+Na       uni1014
+Ra       uni101B
+Meds     uni103C uni103B uni103E uni1060 uni103D
+SARa     uni25CC_uni103C
+SALa     uni25CC_uni103B
+SAWa     uni25CC_uni103D
+SAGha    uni25CC_uni103E
+SAYa     uni25CC_uni1060
+SAVo     uni25CC_uni1036 uni25CC_uni102F uni25CC_uni1030 uni25CC_uni1032 uni25CC_uni102D uni25CC_uni102E
+SAAye    uni25CC_uni1037
+KswTones uni1062 uni102C uni1063
+PwoTones uni1069 uni106A uni106B uni106C uni106D
+SAAsat   uni25CC_uni103A
  
-@@ -13,7 +86,6 @@
- Exclusive     no
- 
- List
--
-     uni1061_uni103D uni1061 uni103D
-     uni1061_uni103D_uni1037 uni1061 uni103D uni1037
-     uni1061_uni103D_uni102F uni1061 uni103D uni102F
-@@ -37,10 +109,10 @@
- Exclusive     no
- 
- List
--
--	uni1014_uni1037 uni1014 uni1037
-+    uni101B_uni1060_uni1037 uni101B uni1060 uni1037
-     uni101B_uni102F uni101B uni102F
-     uni101B_uni1030 uni101B uni1030
-+    uni1014_uni1037 uni1014 uni1037
- 
- //====================================================
- //    Misc meds + vowels
-@@ -57,7 +129,6 @@
- Exclusive     no
- 
- List
--
-     uni103E_uni1037 uni103E uni1037
-     uni103E_uni102F uni103E uni102F
-     uni103E_uni1030 uni103E uni1030
-@@ -93,7 +164,6 @@
- Exclusive     no
- 
- List
--
-     uni1000_uni1060_uni102F uni1000 uni1060 uni102F
-     uni1001_uni1060_uni102F uni1001 uni1060 uni102F
-     uni1002_uni1060_uni102F uni1002 uni1060 uni102F
-@@ -144,14 +214,16 @@
-     uni101A_uni1060_uni1030 uni101A uni1060 uni1030
-     uni101B_uni1060_uni1030 uni101B uni1060 uni1030
-     uni101C_uni1060_uni1030 uni101C uni1060 uni1030
-+    uni101D_uni1060_uni1030 uni101D uni1060 uni1030
-     uni101E_uni1060_uni1030 uni101E uni1060 uni1030
-     uni1065_uni1060_uni1030 uni1065 uni1060 uni1030
-     uni101F_uni1060_uni1030 uni101F uni1060 uni1030
-     uni1021_uni1060_uni1030 uni1021 uni1060 uni1030
-+    uni1027_uni1060_uni1030 uni1027 uni1060 uni1030
- 
--------------------------------------------------------------------
-+//------------------------------------------------------------------
- //  Consonants + med ra + uu and oo
--------------------------------------------------------------------
-+//------------------------------------------------------------------
- 
- Type          LigatureList
- Name          NULL
-@@ -164,16 +236,17 @@
- Exclusive     no
- 
- List
--
-     uni1000_uni103C_uni102F uni1000 uni103C uni102F 
-     uni1003_uni103C_uni102F uni1003 uni103C uni102F 
-     uni1006_uni103C_uni102F uni1006 uni103C uni102F 
-     uni1010_uni103C_uni102F uni1010 uni103C uni102F 
-     uni1011_uni103C_uni102F uni1011 uni103C uni102F 
-     uni1018_uni103C_uni102F uni1018 uni103C uni102F 
-+    uni101A_uni103C_uni102F uni101A uni103C uni102F 
-     uni101C_uni103C_uni102F uni101C uni103C uni102F 
-     uni101E_uni103C_uni102F uni101E uni103C uni102F 
-     uni101F_uni103C_uni102F uni101F uni103C uni102F 
-+    uni1021_uni103C_uni102F uni1021 uni103C uni102F 
-     uni1001_uni103C_uni102F uni1001 uni103C uni102F 
-     uni1002_uni103C_uni102F uni1002 uni103C uni102F 
-     uni100E_uni103C_uni102F uni100E uni103C uni102F 
-@@ -182,12 +255,14 @@
-     uni1007_uni103C_uni102F uni1007 uni103C uni102F 
-     uni1012_uni103C_uni102F uni1012 uni103C uni102F 
-     uni1013_uni103C_uni102F uni1013 uni103C uni102F 
-+    uni1014_uni103C_uni102F uni1014 uni103C uni102F 
-     uni1015_uni103C_uni102F uni1015 uni103C uni102F 
-     uni1016_uni103C_uni102F uni1016 uni103C uni102F 
-     uni1017_uni103C_uni102F uni1017 uni103C uni102F 
-     uni1019_uni103C_uni102F uni1019 uni103C uni102F 
-     uni101D_uni103C_uni102F uni101D uni103C uni102F 
-     uni1065_uni103C_uni102F uni1065 uni103C uni102F
-+    uni1027_uni103C_uni102F uni1027 uni103C uni102F    
-     uni1000_uni103C_uni1030 uni1000 uni103C uni1030 
-     uni1003_uni103C_uni1030 uni1003 uni103C uni1030 
-     uni1006_uni103C_uni1030 uni1006 uni103C uni1030 
-@@ -205,21 +280,51 @@
-     uni1007_uni103C_uni1030 uni1007 uni103C uni1030 
-     uni1012_uni103C_uni1030 uni1012 uni103C uni1030 
-     uni1013_uni103C_uni1030 uni1013 uni103C uni1030 
-+    uni1014_uni103C_uni1030 uni1014 uni103C uni1030 
-     uni1015_uni103C_uni1030 uni1015 uni103C uni1030 
-     uni1016_uni103C_uni1030 uni1016 uni103C uni1030 
-     uni1017_uni103C_uni1030 uni1017 uni103C uni1030 
-     uni1019_uni103C_uni1030 uni1019 uni103C uni1030 
-     uni101D_uni103C_uni1030 uni101D uni103C uni1030 
-     uni1065_uni103C_uni1030 uni1065 uni103C uni1030 
-+    uni1027_uni103C_uni1030 uni1027 uni103C uni1030 
- 
--------------------------------------------------------------------
--//  Consonants + med ra contextual
--------------------------------------------------------------------
-+//====================================================
-+//	Consonants + Med. ra contextual shaping: Step 1
-+//====================================================
- 
-+Type Contextual
-+Name NULL
-+Namecode 7
-+Setting NULL
-+Settingcode 0
-+Default yes
-+Orientation HV
-+Forward yes
-+Exclusive no
- 
--------------------------------------------------------------------
--//  Consonants + med ra
--------------------------------------------------------------------
-+Cons  uni1000 uni1001 uni1002 uni1003 uni100E uni1004 uni1005 uni1006 uni1007 uni1010 uni1011 uni1012 uni1013 uni1014 uni1015 uni1016 uni1017 uni1018 uni1019 uni101A uni101C uni101D uni101E uni1065 uni101F uni1021 uni1027
-+Ra    uni103C
-+Vowl  uni102B uni1032 uni102D uni102E
-+
-+            EOT     OOB     DEL     EOL   Cons  Ra   Vowl
-+StartText   1       1       1       1     2     1    1
-+StartLine   1       1       1       1     2     1    1
-+SawCons     1       1       1       1     1     3    1
-+SawRa       1       1       1       1     1     1    4
-+
-+  GoTo      Mark? Advance?    SubstMark   SubstCurrent
-+1 StartText no    yes         none        none
-+2 SawCons   no    yes         none        none
-+3 SawRa     yes   yes         none        none
-+4 StartText no    yes         DoSub       none
-+
-+DoSub
-+      uni103C uni103C.alt.narr
-+      
-+//====================================================
-+//	Consonants + Med. ra contextual shaping: Step 2
-+//====================================================
- 
- Type          LigatureList
- Name          NULL
-@@ -232,16 +337,60 @@
- Exclusive     no
- 
- List
-+	uni1000_uni103C.alt uni1000 uni103C.alt.narr
-+	uni1001_uni103C.alt uni1001 uni103C.alt.narr
-+	uni1002_uni103C.alt uni1002 uni103C.alt.narr
-+	uni1003_uni103C.alt uni1003 uni103C.alt.narr
-+	uni100E_uni103C.alt uni100E uni103C.alt.narr
-+	uni1004_uni103C.alt uni1004 uni103C.alt.narr
-+	uni1005_uni103C.alt uni1005 uni103C.alt.narr
-+	uni1006_uni103C.alt uni1006 uni103C.alt.narr
-+	uni1007_uni103C.alt uni1007 uni103C.alt.narr
-+	uni1010_uni103C.alt uni1010 uni103C.alt.narr
-+	uni1011_uni103C.alt uni1011 uni103C.alt.narr
-+	uni1012_uni103C.alt uni1012 uni103C.alt.narr
-+	uni1013_uni103C.alt uni1013 uni103C.alt.narr
-+	uni1014_uni103C.alt uni1014 uni103C.alt.narr
-+	uni1015_uni103C.alt uni1015 uni103C.alt.narr
-+	uni1016_uni103C.alt uni1016 uni103C.alt.narr
-+	uni1017_uni103C.alt uni1017 uni103C.alt.narr
-+	uni1018_uni103C.alt uni1018 uni103C.alt.narr
-+	uni1019_uni103C.alt uni1019 uni103C.alt.narr
-+	uni101A_uni103C.alt uni101A uni103C.alt.narr
-+	uni101C_uni103C.alt uni101C uni103C.alt.narr
-+	uni101D_uni103C.alt uni101D uni103C.alt.narr
-+    uni101E_uni103C.alt uni101E uni103C.alt.narr
-+    uni1065_uni103C.alt uni1065 uni103C.alt.narr
-+    uni101F_uni103C.alt uni101F uni103C.alt.narr
-+    uni1021_uni103C.alt uni1021 uni103C.alt.narr
-+    uni1027_uni103C.alt uni1027 uni103C.alt.narr
-+
-+//------------------------------------------------------------------
-+//  Consonants + med ra
-+//------------------------------------------------------------------
-+
-+Type          LigatureList
-+Name          NULL
-+Namecode      27
-+Setting       NULL
-+Settingcode   0
-+Default       yes
-+Orientation   HV
-+Forward       yes
-+Exclusive     no
- 
-+List
-     uni1000_uni103C uni1000 uni103C
-     uni1003_uni103C uni1003 uni103C
-     uni1006_uni103C uni1006 uni103C
-     uni1010_uni103C uni1010 uni103C
-     uni1011_uni103C uni1011 uni103C
-     uni1018_uni103C uni1018 uni103C
-+    uni101A_uni103C uni101A uni103C
-     uni101C_uni103C uni101C uni103C
-     uni101E_uni103C uni101E uni103C
-     uni101F_uni103C uni101F uni103C
-+    uni1021_uni103C uni1021 uni103C
-     uni1001_uni103C uni1001 uni103C
-     uni1002_uni103C uni1002 uni103C
-     uni100E_uni103C uni100E uni103C
-@@ -250,16 +399,18 @@
-     uni1007_uni103C uni1007 uni103C
-     uni1012_uni103C uni1012 uni103C
-     uni1013_uni103C uni1013 uni103C
-+    uni1014_uni103C uni1014 uni103C
-     uni1015_uni103C uni1015 uni103C
-     uni1016_uni103C uni1016 uni103C
-     uni1017_uni103C uni1017 uni103C
-     uni1019_uni103C uni1019 uni103C
-     uni101D_uni103C uni101D uni103C
-     uni1065_uni103C uni1065 uni103C
-+    uni1027_uni103C uni1027 uni103C
- 
--------------------------------------------------------------------
-+//------------------------------------------------------------------
- //  Consonants + med wa + uu and oo
--------------------------------------------------------------------
-+//------------------------------------------------------------------
- 
- Type          LigatureList
- Name          NULL
-@@ -272,7 +423,6 @@
- Exclusive     no
- 
- List
--
-     uni1000_uni103D_uni102F uni1000 uni103D uni102F
-     uni1001_uni103D_uni102F uni1001 uni103D uni102F
-     uni1002_uni103D_uni102F uni1002 uni103D uni102F
-@@ -296,10 +446,12 @@
-     uni101A_uni103D_uni102F uni101A uni103D uni102F
-     uni101B_uni103D_uni102F uni101B uni103D uni102F
-     uni101C_uni103D_uni102F uni101C uni103D uni102F
-+    uni101D_uni103D_uni102F uni101D uni103D uni102F
-     uni101E_uni103D_uni102F uni101E uni103D uni102F
-     uni1065_uni103D_uni102F uni1065 uni103D uni102F
-     uni101F_uni103D_uni102F uni101F uni103D uni102F
-     uni1021_uni103D_uni102F uni1021 uni103D uni102F
-+    uni1027_uni103D_uni102F uni1027 uni103D uni102F
-     uni1000_uni103D_uni1030 uni1000 uni103D uni1030
-     uni1001_uni103D_uni1030 uni1001 uni103D uni1030
-     uni1002_uni103D_uni1030 uni1002 uni103D uni1030
-@@ -323,14 +475,16 @@
-     uni101A_uni103D_uni1030 uni101A uni103D uni1030
-     uni101B_uni103D_uni1030 uni101B uni103D uni1030
-     uni101C_uni103D_uni1030 uni101C uni103D uni1030
-+    uni101D_uni103D_uni1030 uni101D uni103D uni1030
-     uni101E_uni103D_uni1030 uni101E uni103D uni1030
-     uni1065_uni103D_uni1030 uni1065 uni103D uni1030
-     uni101F_uni103D_uni1030 uni101F uni103D uni1030
-     uni1021_uni103D_uni1030 uni1021 uni103D uni1030
-+    uni1027_uni103D_uni1030 uni1027 uni103D uni1030
- 
--------------------------------------------------------------------
-+//------------------------------------------------------------------
- //  Tones
--------------------------------------------------------------------
-+//------------------------------------------------------------------
- 
- Type          LigatureList
- Name          NULL
-@@ -353,6 +507,66 @@
-     uni106C_uni1037 uni106C uni1037
-     uni106D_uni1037 uni106D uni1037
-     
--------------------------------------------------------------------
--//  Na, nya, and ra shaping
--------------------------------------------------------------------
-+//------------------------------------------------------------------
-+//  Na and nya shaping
-+//------------------------------------------------------------------
-+
-+Type Contextual
-+Name NULL
-+Namecode 7
-+Setting NULL
-+Settingcode 0
-+Default yes
-+Orientation HV
-+Forward yes
-+Exclusive no
-+
-+Nya   uni100A
-+Na    uni1014
-+Subs  uni103B uni103D uni103E uni1060 uni102F uni1030 uni103E_uni102F uni103E_uni1030 
-+            EOT     OOB     DEL     EOL   Nya   Na   Subs
-+StartText   1       1       1       1     2     3    1
-+StartLine   1       1       1       1     2     3    1
-+SawNya      1       1       1       1     1     1    4
-+SawNa       1       1       1       1     1     1    4
-+
-+  GoTo      Mark? Advance?    SubstMark   SubstCurrent
-+1 StartText no    yes         none        none
-+2 SawNya    yes   yes         none        none
-+3 SawNa     yes   yes         none        none
-+4 StartText no    yes         DoSub       none
-+
-+DoSub
-+      uni100A uni100A.alt
-+      uni1014 uni1014.alt
-+
-+//------------------------------------------------------------------
-+//  Ra shaping
-+//------------------------------------------------------------------
-+
-+Type Contextual
-+Name NULL
-+Namecode 7
-+Setting NULL
-+Settingcode 0
-+Default yes
-+Orientation HV
-+Forward yes
-+Exclusive no
-+
-+Ra    uni101B
-+MedYa uni1060
-+
-+            EOT     OOB     DEL     EOL   Ra    MedYa
-+StartText   1       1       1       1     2     1
-+StartLine   1       1       1       1     2     1
-+SawRa       1       1       1       1     1     3
-+
-+  GoTo      Mark? Advance?    SubstMark   SubstCurrent
-+1 StartText no    yes         none        none
-+2 SawRa     yes   yes         none        none
-+3 StartText no    yes         DoSub       none
-+
-+DoSub
-+      uni101B uni101B.alt2
-+
+            EOT   OOB   DEL   EOL   Cons  Sha   Nya   Na    Ra    Meds  SARa  SALa  SAWa  SAGha SAYa  SAVo  SAAye KswTones PwoTones SAAsat
+StartText   1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     1     10       11       1
+StartLine   1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     1     10       11       1
+SawCons     1     1     1     1     3     4     5     6     7     8     9     9     9     9     9     2     2     10       11       2
+SawSha      1     1     1     1     3     4     5     6     7     8     1     1     9     1     1     2     2     10       11       2
+SawNya      1     1     1     1     3     4     5     6     7     8     1     9     9     9     9     2     2     10       11       2
+SawNa       1     1     1     1     3     4     5     6     7     8     9     1     9     9     9     2     2     10       11       2
+SawRa       1     1     1     1     3     4     5     6     7     8     1     1     9     1     9     2     2     10       11       2
+SawMeds     1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     2     2     10       11       1
+SubedMed    1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     2     2     10       11       1
+KswTones    1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     1     10       11       2
+PwoTones    1     1     1     1     3     4     5     6     7     8     1     1     1     1     1     1     2     10       11       1
+
+     GoTo      Mark? Advance? SubstMark SubstCurrent    
+1    StartText no    yes      none      none    
+2    StartText no    yes      none      DoSub    
+3    SawCons   no    yes      none      none    
+4    SawSha    no    yes      none      none    
+5    SawNya    no    yes      none      none
+6    SawNa     no    yes      none      none    
+7    SawRa     no    yes      none      none    
+8    SawMeds   no    yes      none      none    
+9    SubedMed  no    yes      none      DoSub    
+10   KswTones  no    yes      none      none    
+11   PwoTones  no    yes      none      none    
+
+DoSub
+    uni25CC_uni103C uni103C
+    uni25CC_uni103B uni103B
+    uni25CC_uni103E uni103E
+    uni25CC_uni103D uni103D
+    uni25CC_uni1060 uni1060
+    uni25CC_uni1036 uni1036
+    uni25CC_uni102F uni102F
+    uni25CC_uni1030 uni1030
+    uni25CC_uni1037 uni1037
+    uni25CC_uni1032 uni1032
+    uni25CC_uni102D uni102D
+    uni25CC_uni102E uni102E
+    uni25CC_uni103A uni103A
+
+
+//====================================================
+//    Sha ligatures
+//====================================================
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+    uni1061_uni103D uni1061 uni103D
+    uni1061_uni103D_uni1037 uni1061 uni103D uni1037
+    uni1061_uni103D_uni102F uni1061 uni103D uni102F
+    uni1061_uni103D_uni1030 uni1061 uni103D uni1030
+    uni1061_uni1037 uni1061 uni1037
+    uni1061_uni102F uni1061 uni102F
+    uni1061_uni1030 uni1061 uni1030
+
+//====================================================
+//    Na and Ra ligatures
+//====================================================
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+    uni101B_uni1060_uni1037 uni101B uni1060 uni1037
+    uni101B_uni102F uni101B uni102F
+    uni101B_uni1030 uni101B uni1030
+    uni1014_uni1037 uni1014 uni1037
+
+//====================================================
+//    Misc meds + vowels
+//====================================================
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+    uni103E_uni1037 uni103E uni1037
+    uni103E_uni102F uni103E uni102F
+    uni103E_uni1030 uni103E uni1030
+    uni1060_uni1037 uni1060 uni1037
+    uni103D_uni1037 uni103D uni1037
+    uni103B_uni1037 uni103B uni1037
+    uni103B_uni1036 uni103B uni1036
+    uni103B_uni1032 uni103B uni1032
+    uni103B_uni102D uni103B uni102D
+    uni103B_uni102E uni103B uni102E
+    uni103B_uni102F uni103B uni102F
+    uni103B_uni1030 uni103B uni1030
+    uni103B_uni1037 uni103B uni1037
+    uni103B_uni1036 uni103B uni1036
+    uni103B_uni1032 uni103B uni1032
+    uni103B_uni102D uni103B uni102D
+    uni103B_uni102E uni103B uni102E
+    uni103B_uni102F uni103B uni102F
+    uni103B_uni1030 uni103B uni1030
+    
+//====================================================
+//    Consonants + med ya + oo and uu ligatures
+//====================================================
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+    uni1000_uni1060_uni102F uni1000 uni1060 uni102F
+    uni1001_uni1060_uni102F uni1001 uni1060 uni102F
+    uni1002_uni1060_uni102F uni1002 uni1060 uni102F
+    uni1003_uni1060_uni102F uni1003 uni1060 uni102F
+    uni100E_uni1060_uni102F uni100E uni1060 uni102F
+    uni1004_uni1060_uni102F uni1004 uni1060 uni102F
+    uni1005_uni1060_uni102F uni1005 uni1060 uni102F
+    uni1006_uni1060_uni102F uni1006 uni1060 uni102F
+    uni1007_uni1060_uni102F uni1007 uni1060 uni102F
+    uni100A_uni1060_uni102F uni100A uni1060 uni102F
+    uni1010_uni1060_uni102F uni1010 uni1060 uni102F
+    uni1011_uni1060_uni102F uni1011 uni1060 uni102F
+    uni1012_uni1060_uni102F uni1012 uni1060 uni102F
+    uni1013_uni1060_uni102F uni1013 uni1060 uni102F
+    uni1014_uni1060_uni102F uni1014 uni1060 uni102F
+    uni1015_uni1060_uni102F uni1015 uni1060 uni102F
+    uni1016_uni1060_uni102F uni1016 uni1060 uni102F
+    uni1017_uni1060_uni102F uni1017 uni1060 uni102F
+    uni1018_uni1060_uni102F uni1018 uni1060 uni102F
+    uni1019_uni1060_uni102F uni1019 uni1060 uni102F
+    uni101A_uni1060_uni102F uni101A uni1060 uni102F
+    uni101B_uni1060_uni102F uni101B uni1060 uni102F
+    uni101C_uni1060_uni102F uni101C uni1060 uni102F
+    uni101E_uni1060_uni102F uni101E uni1060 uni102F
+    uni1065_uni1060_uni102F uni1065 uni1060 uni102F
+    uni101F_uni1060_uni102F uni101F uni1060 uni102F
+    uni1021_uni1060_uni102F uni1021 uni1060 uni102F
+    uni1000_uni1060_uni1030 uni1000 uni1060 uni1030
+    uni1001_uni1060_uni1030 uni1001 uni1060 uni1030
+    uni1002_uni1060_uni1030 uni1002 uni1060 uni1030
+    uni1003_uni1060_uni1030 uni1003 uni1060 uni1030
+    uni100E_uni1060_uni1030 uni100E uni1060 uni1030
+    uni1004_uni1060_uni1030 uni1004 uni1060 uni1030
+    uni1005_uni1060_uni1030 uni1005 uni1060 uni1030
+    uni1006_uni1060_uni1030 uni1006 uni1060 uni1030
+    uni1007_uni1060_uni1030 uni1007 uni1060 uni1030
+    uni100A_uni1060_uni1030 uni100A uni1060 uni1030
+    uni1010_uni1060_uni1030 uni1010 uni1060 uni1030
+    uni1011_uni1060_uni1030 uni1011 uni1060 uni1030
+    uni1012_uni1060_uni1030 uni1012 uni1060 uni1030
+    uni1013_uni1060_uni1030 uni1013 uni1060 uni1030
+    uni1014_uni1060_uni1030 uni1014 uni1060 uni1030
+    uni1015_uni1060_uni1030 uni1015 uni1060 uni1030
+    uni1016_uni1060_uni1030 uni1016 uni1060 uni1030
+    uni1017_uni1060_uni1030 uni1017 uni1060 uni1030
+    uni1018_uni1060_uni1030 uni1018 uni1060 uni1030
+    uni1019_uni1060_uni1030 uni1019 uni1060 uni1030
+    uni101A_uni1060_uni1030 uni101A uni1060 uni1030
+    uni101B_uni1060_uni1030 uni101B uni1060 uni1030
+    uni101C_uni1060_uni1030 uni101C uni1060 uni1030
+    uni101D_uni1060_uni1030 uni101D uni1060 uni1030
+    uni101E_uni1060_uni1030 uni101E uni1060 uni1030
+    uni1065_uni1060_uni1030 uni1065 uni1060 uni1030
+    uni101F_uni1060_uni1030 uni101F uni1060 uni1030
+    uni1021_uni1060_uni1030 uni1021 uni1060 uni1030
+    uni1027_uni1060_uni1030 uni1027 uni1060 uni1030
+
+//------------------------------------------------------------------
+//  Consonants + med ra + uu and oo
+//------------------------------------------------------------------
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+    uni1000_uni103C_uni102F uni1000 uni103C uni102F 
+    uni1003_uni103C_uni102F uni1003 uni103C uni102F 
+    uni1006_uni103C_uni102F uni1006 uni103C uni102F 
+    uni1010_uni103C_uni102F uni1010 uni103C uni102F 
+    uni1011_uni103C_uni102F uni1011 uni103C uni102F 
+    uni1018_uni103C_uni102F uni1018 uni103C uni102F 
+    uni101A_uni103C_uni102F uni101A uni103C uni102F 
+    uni101C_uni103C_uni102F uni101C uni103C uni102F 
+    uni101E_uni103C_uni102F uni101E uni103C uni102F 
+    uni101F_uni103C_uni102F uni101F uni103C uni102F 
+    uni1021_uni103C_uni102F uni1021 uni103C uni102F 
+    uni1001_uni103C_uni102F uni1001 uni103C uni102F 
+    uni1002_uni103C_uni102F uni1002 uni103C uni102F 
+    uni100E_uni103C_uni102F uni100E uni103C uni102F 
+    uni1004_uni103C_uni102F uni1004 uni103C uni102F 
+    uni1005_uni103C_uni102F uni1005 uni103C uni102F 
+    uni1007_uni103C_uni102F uni1007 uni103C uni102F 
+    uni1012_uni103C_uni102F uni1012 uni103C uni102F 
+    uni1013_uni103C_uni102F uni1013 uni103C uni102F 
+    uni1014_uni103C_uni102F uni1014 uni103C uni102F 
+    uni1015_uni103C_uni102F uni1015 uni103C uni102F 
+    uni1016_uni103C_uni102F uni1016 uni103C uni102F 
+    uni1017_uni103C_uni102F uni1017 uni103C uni102F 
+    uni1019_uni103C_uni102F uni1019 uni103C uni102F 
+    uni101D_uni103C_uni102F uni101D uni103C uni102F 
+    uni1065_uni103C_uni102F uni1065 uni103C uni102F
+    uni1027_uni103C_uni102F uni1027 uni103C uni102F    
+    uni1000_uni103C_uni1030 uni1000 uni103C uni1030 
+    uni1003_uni103C_uni1030 uni1003 uni103C uni1030 
+    uni1006_uni103C_uni1030 uni1006 uni103C uni1030 
+    uni1010_uni103C_uni1030 uni1010 uni103C uni1030 
+    uni1011_uni103C_uni1030 uni1011 uni103C uni1030 
+    uni1018_uni103C_uni1030 uni1018 uni103C uni1030 
+    uni101C_uni103C_uni1030 uni101C uni103C uni1030 
+    uni101E_uni103C_uni1030 uni101E uni103C uni1030 
+    uni101F_uni103C_uni1030 uni101F uni103C uni1030 
+    uni1001_uni103C_uni1030 uni1001 uni103C uni1030 
+    uni1002_uni103C_uni1030 uni1002 uni103C uni1030 
+    uni100E_uni103C_uni1030 uni100E uni103C uni1030 
+    uni1004_uni103C_uni1030 uni1004 uni103C uni1030 
+    uni1005_uni103C_uni1030 uni1005 uni103C uni1030 
+    uni1007_uni103C_uni1030 uni1007 uni103C uni1030 
+    uni1012_uni103C_uni1030 uni1012 uni103C uni1030 
+    uni1013_uni103C_uni1030 uni1013 uni103C uni1030 
+    uni1014_uni103C_uni1030 uni1014 uni103C uni1030 
+    uni1015_uni103C_uni1030 uni1015 uni103C uni1030 
+    uni1016_uni103C_uni1030 uni1016 uni103C uni1030 
+    uni1017_uni103C_uni1030 uni1017 uni103C uni1030 
+    uni1019_uni103C_uni1030 uni1019 uni103C uni1030 
+    uni101D_uni103C_uni1030 uni101D uni103C uni1030 
+    uni1065_uni103C_uni1030 uni1065 uni103C uni1030 
+    uni1027_uni103C_uni1030 uni1027 uni103C uni1030 
+
+//====================================================
+//	Consonants + Med. ra contextual shaping: Step 1
+//====================================================
+
+Type Contextual
+Name NULL
+Namecode 7
+Setting NULL
+Settingcode 0
+Default yes
+Orientation HV
+Forward yes
+Exclusive no
+
+Cons  uni1000 uni1001 uni1002 uni1003 uni100E uni1004 uni1005 uni1006 uni1007 uni1010 uni1011 uni1012 uni1013 uni1014 uni1015 uni1016 uni1017 uni1018 uni1019 uni101A uni101C uni101D uni101E uni1065 uni101F uni1021 uni1027
+Ra    uni103C
+Vowl  uni102B uni1032 uni102D uni102E
+
+            EOT     OOB     DEL     EOL   Cons  Ra   Vowl
+StartText   1       1       1       1     2     1    1
+StartLine   1       1       1       1     2     1    1
+SawCons     1       1       1       1     1     3    1
+SawRa       1       1       1       1     1     1    4
+
+  GoTo      Mark? Advance?    SubstMark   SubstCurrent
+1 StartText no    yes         none        none
+2 SawCons   no    yes         none        none
+3 SawRa     yes   yes         none        none
+4 StartText no    yes         DoSub       none
+
+DoSub
+      uni103C uni103C.alt.narr
+      
+//====================================================
+//	Consonants + Med. ra contextual shaping: Step 2
+//====================================================
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+	uni1000_uni103C.alt uni1000 uni103C.alt.narr
+	uni1001_uni103C.alt uni1001 uni103C.alt.narr
+	uni1002_uni103C.alt uni1002 uni103C.alt.narr
+	uni1003_uni103C.alt uni1003 uni103C.alt.narr
+	uni100E_uni103C.alt uni100E uni103C.alt.narr
+	uni1004_uni103C.alt uni1004 uni103C.alt.narr
+	uni1005_uni103C.alt uni1005 uni103C.alt.narr
+	uni1006_uni103C.alt uni1006 uni103C.alt.narr
+	uni1007_uni103C.alt uni1007 uni103C.alt.narr
+	uni1010_uni103C.alt uni1010 uni103C.alt.narr
+	uni1011_uni103C.alt uni1011 uni103C.alt.narr
+	uni1012_uni103C.alt uni1012 uni103C.alt.narr
+	uni1013_uni103C.alt uni1013 uni103C.alt.narr
+	uni1014_uni103C.alt uni1014 uni103C.alt.narr
+	uni1015_uni103C.alt uni1015 uni103C.alt.narr
+	uni1016_uni103C.alt uni1016 uni103C.alt.narr
+	uni1017_uni103C.alt uni1017 uni103C.alt.narr
+	uni1018_uni103C.alt uni1018 uni103C.alt.narr
+	uni1019_uni103C.alt uni1019 uni103C.alt.narr
+	uni101A_uni103C.alt uni101A uni103C.alt.narr
+	uni101C_uni103C.alt uni101C uni103C.alt.narr
+	uni101D_uni103C.alt uni101D uni103C.alt.narr
+    uni101E_uni103C.alt uni101E uni103C.alt.narr
+    uni1065_uni103C.alt uni1065 uni103C.alt.narr
+    uni101F_uni103C.alt uni101F uni103C.alt.narr
+    uni1021_uni103C.alt uni1021 uni103C.alt.narr
+    uni1027_uni103C.alt uni1027 uni103C.alt.narr
+
+//------------------------------------------------------------------
+//  Consonants + med ra
+//------------------------------------------------------------------
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+    uni1000_uni103C uni1000 uni103C
+    uni1003_uni103C uni1003 uni103C
+    uni1006_uni103C uni1006 uni103C
+    uni1010_uni103C uni1010 uni103C
+    uni1011_uni103C uni1011 uni103C
+    uni1018_uni103C uni1018 uni103C
+    uni101A_uni103C uni101A uni103C
+    uni101C_uni103C uni101C uni103C
+    uni101E_uni103C uni101E uni103C
+    uni101F_uni103C uni101F uni103C
+    uni1021_uni103C uni1021 uni103C
+    uni1001_uni103C uni1001 uni103C
+    uni1002_uni103C uni1002 uni103C
+    uni100E_uni103C uni100E uni103C
+    uni1004_uni103C uni1004 uni103C
+    uni1005_uni103C uni1005 uni103C
+    uni1007_uni103C uni1007 uni103C
+    uni1012_uni103C uni1012 uni103C
+    uni1013_uni103C uni1013 uni103C
+    uni1014_uni103C uni1014 uni103C
+    uni1015_uni103C uni1015 uni103C
+    uni1016_uni103C uni1016 uni103C
+    uni1017_uni103C uni1017 uni103C
+    uni1019_uni103C uni1019 uni103C
+    uni101D_uni103C uni101D uni103C
+    uni1065_uni103C uni1065 uni103C
+    uni1027_uni103C uni1027 uni103C
+
+//------------------------------------------------------------------
+//  Consonants + med wa + uu and oo
+//------------------------------------------------------------------
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+    uni1000_uni103D_uni102F uni1000 uni103D uni102F
+    uni1001_uni103D_uni102F uni1001 uni103D uni102F
+    uni1002_uni103D_uni102F uni1002 uni103D uni102F
+    uni1003_uni103D_uni102F uni1003 uni103D uni102F
+    uni100E_uni103D_uni102F uni100E uni103D uni102F
+    uni1004_uni103D_uni102F uni1004 uni103D uni102F
+    uni1005_uni103D_uni102F uni1005 uni103D uni102F
+    uni1006_uni103D_uni102F uni1006 uni103D uni102F
+    uni1007_uni103D_uni102F uni1007 uni103D uni102F
+    uni100A_uni103D_uni102F uni100A uni103D uni102F
+    uni1010_uni103D_uni102F uni1010 uni103D uni102F
+    uni1011_uni103D_uni102F uni1011 uni103D uni102F
+    uni1012_uni103D_uni102F uni1012 uni103D uni102F
+    uni1013_uni103D_uni102F uni1013 uni103D uni102F
+    uni1014_uni103D_uni102F uni1014 uni103D uni102F
+    uni1015_uni103D_uni102F uni1015 uni103D uni102F
+    uni1016_uni103D_uni102F uni1016 uni103D uni102F
+    uni1017_uni103D_uni102F uni1017 uni103D uni102F
+    uni1018_uni103D_uni102F uni1018 uni103D uni102F
+    uni1019_uni103D_uni102F uni1019 uni103D uni102F
+    uni101A_uni103D_uni102F uni101A uni103D uni102F
+    uni101B_uni103D_uni102F uni101B uni103D uni102F
+    uni101C_uni103D_uni102F uni101C uni103D uni102F
+    uni101D_uni103D_uni102F uni101D uni103D uni102F
+    uni101E_uni103D_uni102F uni101E uni103D uni102F
+    uni1065_uni103D_uni102F uni1065 uni103D uni102F
+    uni101F_uni103D_uni102F uni101F uni103D uni102F
+    uni1021_uni103D_uni102F uni1021 uni103D uni102F
+    uni1027_uni103D_uni102F uni1027 uni103D uni102F
+    uni1000_uni103D_uni1030 uni1000 uni103D uni1030
+    uni1001_uni103D_uni1030 uni1001 uni103D uni1030
+    uni1002_uni103D_uni1030 uni1002 uni103D uni1030
+    uni1003_uni103D_uni1030 uni1003 uni103D uni1030
+    uni100E_uni103D_uni1030 uni100E uni103D uni1030
+    uni1004_uni103D_uni1030 uni1004 uni103D uni1030
+    uni1005_uni103D_uni1030 uni1005 uni103D uni1030
+    uni1006_uni103D_uni1030 uni1006 uni103D uni1030
+    uni1007_uni103D_uni1030 uni1007 uni103D uni1030
+    uni100A_uni103D_uni1030 uni100A uni103D uni1030
+    uni1010_uni103D_uni1030 uni1010 uni103D uni1030
+    uni1011_uni103D_uni1030 uni1011 uni103D uni1030
+    uni1012_uni103D_uni1030 uni1012 uni103D uni1030
+    uni1013_uni103D_uni1030 uni1013 uni103D uni1030
+    uni1014_uni103D_uni1030 uni1014 uni103D uni1030
+    uni1015_uni103D_uni1030 uni1015 uni103D uni1030
+    uni1016_uni103D_uni1030 uni1016 uni103D uni1030
+    uni1017_uni103D_uni1030 uni1017 uni103D uni1030
+    uni1018_uni103D_uni1030 uni1018 uni103D uni1030
+    uni1019_uni103D_uni1030 uni1019 uni103D uni1030
+    uni101A_uni103D_uni1030 uni101A uni103D uni1030
+    uni101B_uni103D_uni1030 uni101B uni103D uni1030
+    uni101C_uni103D_uni1030 uni101C uni103D uni1030
+    uni101D_uni103D_uni1030 uni101D uni103D uni1030
+    uni101E_uni103D_uni1030 uni101E uni103D uni1030
+    uni1065_uni103D_uni1030 uni1065 uni103D uni1030
+    uni101F_uni103D_uni1030 uni101F uni103D uni1030
+    uni1021_uni103D_uni1030 uni1021 uni103D uni1030
+    uni1027_uni103D_uni1030 uni1027 uni103D uni1030
+
+//------------------------------------------------------------------
+//  Tones
+//------------------------------------------------------------------
+
+Type          LigatureList
+Name          NULL
+Namecode      27
+Setting       NULL
+Settingcode   0
+Default       yes
+Orientation   HV
+Forward       yes
+Exclusive     no
+
+List
+
+    uni1062_uni103A uni1062 uni103A
+    uni102C_uni103A uni102C uni103A
+    uni1063_uni103A uni1063 uni103A
+    uni1069_uni1037 uni1069 uni1037
+    uni106A_uni1037 uni106A uni1037
+    uni106B_uni1037 uni106B uni1037
+    uni106C_uni1037 uni106C uni1037
+    uni106D_uni1037 uni106D uni1037
+    
+//------------------------------------------------------------------
+//  Na and nya shaping
+//------------------------------------------------------------------
+
+Type Contextual
+Name NULL
+Namecode 7
+Setting NULL
+Settingcode 0
+Default yes
+Orientation HV
+Forward yes
+Exclusive no
+
+Nya   uni100A
+Na    uni1014
+Subs  uni103B uni103D uni103E uni1060 uni102F uni1030 uni103E_uni102F uni103E_uni1030 
+            EOT     OOB     DEL     EOL   Nya   Na   Subs
+StartText   1       1       1       1     2     3    1
+StartLine   1       1       1       1     2     3    1
+SawNya      1       1       1       1     1     1    4
+SawNa       1       1       1       1     1     1    4
+
+  GoTo      Mark? Advance?    SubstMark   SubstCurrent
+1 StartText no    yes         none        none
+2 SawNya    yes   yes         none        none
+3 SawNa     yes   yes         none        none
+4 StartText no    yes         DoSub       none
+
+DoSub
+      uni100A uni100A.alt
+      uni1014 uni1014.alt
+
+//------------------------------------------------------------------
+//  Ra shaping
+//------------------------------------------------------------------
+
+Type Contextual
+Name NULL
+Namecode 7
+Setting NULL
+Settingcode 0
+Default yes
+Orientation HV
+Forward yes
+Exclusive no
+
+Ra    uni101B
+MedYa uni1060
+
+            EOT     OOB     DEL     EOL   Ra    MedYa
+StartText   1       1       1       1     2     1
+StartLine   1       1       1       1     2     1
+SawRa       1       1       1       1     1     3
+
+  GoTo      Mark? Advance?    SubstMark   SubstCurrent
+1 StartText no    yes         none        none
+2 SawRa     yes   yes         none        none
+3 StartText no    yes         DoSub       none
+
+DoSub
+      uni101B uni101B.alt2
+
